@@ -18,6 +18,7 @@ void setup() {
   pinMode(RightEnA, OUTPUT);
   pinMode(BUTTON_PIN, INPUT_PULLUP);
   Serial.begin(9600);
+  goStraight();
 }
 
 void slowDown() {
@@ -92,7 +93,7 @@ if (Serial.available() > 0){
 
     case 1:
       {
-        manualSpeed = 50;
+        manualSpeed = 70;
       }
       break;
 
